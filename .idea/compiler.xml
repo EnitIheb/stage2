@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JWTauthentication" />
         <module name="eureka-server" />
         <module name="user-crud" />
+        <module name="config-server" />
         <module name="authentication" />
         <module name="Backend" />
         <module name="zuul-gateway" />
+        <module name="discovery-server" />
         <module name="ads-crud" />
         <module name="random-recommandation-service" />
         <module name="serving-service" />
@@ -21,7 +24,10 @@
       <module name="AdsManagement" target="1.8" />
       <module name="authentication" target="1.8" />
       <module name="Backend" target="1.5" />
+      <module name="config-server" target="1.8" />
+      <module name="discovery-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="JWTauthentication" target="1.8" />
       <module name="random-recommandation-service" target="1.8" />
       <module name="serving-service" target="1.8" />
       <module name="user-crud" target="1.8" />
@@ -31,8 +37,11 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AdsManagement" options="-parameters" />
+      <module name="JWTauthentication" options="-parameters" />
       <module name="ads-crud" options="-parameters" />
       <module name="authentication" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="random-recommandation-service" options="-parameters" />
       <module name="serving-service" options="-parameters" />

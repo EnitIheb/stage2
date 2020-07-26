@@ -71,14 +71,29 @@ services:
 
   authentication:
     build:
-      context: authentication
+      context: JWTauthentication
       dockerfile: Dockerfile
     depends_on:
-#      - kafka
-       - mysql
+      - config-server
+      - mysql
+      - discovery-server
+    restart: always
     ports:
       - "8098:8098"
-
+    command:  sh -c "/wait  && java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar"
+    environment:
+        - WAIT_HOSTS=config-server:8888
+        - WAIT_HOSTS_TIMEOUT=3000
+        - WAIT_SLEEP_INTERVAL=30
+        - WAIT_HOST_CONNECT_TIMEOUT=3000
+############################################
+  config-server:
+    build:
+      context: config-server
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+#############################################
   mysql:
       image: mysql:latest
 
@@ -96,6 +111,11 @@ services:
       expose:
         # Opens port 3306 on the container
         - '3306'
-
-
+####################################################################
+  discovery-server:
+    build:
+      context: discovery-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
 

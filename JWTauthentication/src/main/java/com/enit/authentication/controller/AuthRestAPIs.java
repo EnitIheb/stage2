@@ -1,12 +1,12 @@
 package com.enit.authentication.controller;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import javax.validation.Valid;
 
+import com.enit.authentication.events.Event;
+import com.enit.authentication.events.LoginUserEvent;
+import com.enit.authentication.events.UpdateUserPreferences;
 import com.enit.authentication.message.request.LoginForm;
 import com.enit.authentication.message.request.SignUpForm;
 import com.enit.authentication.message.response.JwtResponse;
@@ -21,6 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -56,8 +57,8 @@ public class AuthRestAPIs {
 	@Autowired
 	JwtProvider jwtProvider;
 
-//	@Autowired
-//	KafkaTemplate<String, Event> kafkaTemplate;
+	@Autowired
+	KafkaTemplate<String, String> kafkaTemplate;
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginForm loginRequest) {
@@ -73,8 +74,8 @@ public class AuthRestAPIs {
 
 		//List<String> preferences = userRepository.findByUsername(loginRequest.getUsername()).get().getPreferences();
 //
-//		kafkaTemplate.send("login-logout", new LoginUserEvent(loginRequest.getUsername()));
-//		kafkaTemplate.send("usersProfiles", new UpdateUserPreferences(loginRequest.getUsername(), preferences));
+		//kafkaTemplate.send("login-logout", new LoginUserEvent(loginRequest.getUsername()));
+		kafkaTemplate.send("usersProfiles", "hello");
 		return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getUsername(), userDetails.getAuthorities()));
 
 	}

@@ -1,0 +1,3 @@
+docker run -it --network="backend_default" --name="consumer" confluentinc/cp-kafkacat bash
+
+kafkacat -b 192.168.99.100:19092 -t usersProfiles

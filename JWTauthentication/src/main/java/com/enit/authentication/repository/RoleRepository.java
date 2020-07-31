@@ -3,7 +3,6 @@ package com.enit.authentication.repository;
 
 import com.enit.authentication.model.Role;
 import com.enit.authentication.model.RoleName;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

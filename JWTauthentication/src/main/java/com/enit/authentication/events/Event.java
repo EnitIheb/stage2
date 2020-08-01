@@ -3,7 +3,6 @@ package com.enit.authentication.events;
 public  abstract class Event {
     
 	private String type;
-
 	public Event(String type) {
 		super();
 		this.type = type;

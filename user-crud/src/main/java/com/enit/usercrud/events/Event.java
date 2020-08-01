@@ -18,9 +18,12 @@ public  abstract class Event {
 	}
 
 	public Event() {
-		
-		
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Event{" +
+				"type='" + type + '\'' +
+				'}';
+	}
 }

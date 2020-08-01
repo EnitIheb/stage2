@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/JWTauthentication/pom.xml" />
         <option value="$PROJECT_DIR$/consumer/consumer/pom.xml" />
         <option value="$PROJECT_DIR$/user-crud1/user-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/user-crud/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

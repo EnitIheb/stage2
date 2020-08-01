@@ -1,6 +1,6 @@
 package com.enit.usercrud.events;
 
-import java.util.List;
+
 
 public class DeleteUserAccount  extends Event{
           

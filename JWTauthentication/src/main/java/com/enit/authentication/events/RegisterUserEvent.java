@@ -1,6 +1,6 @@
 package com.enit.authentication.events;
 
-public class LoginUserEvent extends Event {
+public class RegisterUserEvent extends Event {
 
 	private String username;
 
@@ -12,13 +12,13 @@ public class LoginUserEvent extends Event {
 		this.username = username;
 	}
 
-	public LoginUserEvent(String username) {
+	public RegisterUserEvent(String username) {
 		super("login");
 		this.username = username;
 
 	}
 
-	public LoginUserEvent() {
+	public RegisterUserEvent() {
 
 	}
 }

@@ -4,25 +4,14 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
 import java.util.List;
-
-import com.enit.usercrud.events.DeleteUserAccount;
-import com.enit.usercrud.events.Event;
-import com.enit.usercrud.events.UpdateUserPreferences;
 import com.enit.usercrud.model.Role;
 import com.enit.usercrud.model.User;
 import com.enit.usercrud.repository.RoleRepository;
 import com.enit.usercrud.repository.UserRepository;
 import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.kafka.annotation.PartitionOffset;
-import org.springframework.kafka.annotation.TopicPartition;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.support.KafkaHeaders;
-import org.springframework.messaging.handler.annotation.Header;
-import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,7 +30,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class TestRestAPIs {
 
-	private static final String URL_PROFILE_PHOTO_DIRECTORY = "http://localhost:8080/sendProfilePhotoPath";
+	private static final String URL_PROFILE_PHOTO_DIRECTORY = "http://196.168.99.100:8080/sendProfilePhotoPath";
 
 	@Autowired
 	UserRepository userRepository;

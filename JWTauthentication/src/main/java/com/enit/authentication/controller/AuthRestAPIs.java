@@ -5,8 +5,7 @@ import java.util.*;
 import javax.validation.Valid;
 
 import com.enit.authentication.events.Event;
-import com.enit.authentication.events.LoginUserEvent;
-import com.enit.authentication.events.UpdateUserPreferences;
+import com.enit.authentication.events.RegisterUserEvent;
 import com.enit.authentication.message.request.LoginForm;
 import com.enit.authentication.message.request.SignUpForm;
 import com.enit.authentication.message.response.JwtResponse;
@@ -58,7 +57,7 @@ public class AuthRestAPIs {
 	JwtProvider jwtProvider;
 
 	@Autowired
-	KafkaTemplate<String, String> kafkaTemplate;
+	KafkaTemplate<String,Event> kafkaTemplate;
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginForm loginRequest) {
@@ -74,8 +73,8 @@ public class AuthRestAPIs {
 
 		//List<String> preferences = userRepository.findByUsername(loginRequest.getUsername()).get().getPreferences();
 //
-		//kafkaTemplate.send("login-logout", new LoginUserEvent(loginRequest.getUsername()));
-		kafkaTemplate.send("usersProfiles", "hello");
+		kafkaTemplate.send("userPreferences", new RegisterUserEvent(loginRequest.getUsername()));
+
 		return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getUsername(), userDetails.getAuthorities()));
 
 	}
@@ -175,6 +174,8 @@ public class AuthRestAPIs {
 		System.out.println("hello before saving");
 		userRepository.save(user);
 				System.out.println("hello after saving");
+
+		kafkaTemplate.send("usersProfiles", new RegisterUserEvent(signUpRequest.getUsername()));
 
 
 		return new ResponseEntity<>(new ResponseMessage("User registered successfully!"), HttpStatus.OK);

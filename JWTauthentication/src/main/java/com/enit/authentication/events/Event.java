@@ -1,18 +1,22 @@
 package com.enit.authentication.events;
 
-public  abstract class Event {
+import com.enit.authentication.model.EventName;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+
+public   class Event {
     
-	private String type;
-	public Event(String type) {
+	private EventName type;
+	public Event(EventName type) {
 		super();
 		this.type = type;
 	}
 
-	public String getType() {
+	public EventName getType() {
 		return type;
 	}
 
-	public void setType(String type) {
+	public void setType(EventName type) {
 		this.type = type;
 	}
 

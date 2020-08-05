@@ -1,9 +1,10 @@
 package com.enit.usercrud.service;
 
 import com.enit.usercrud.events.Event;
-import com.enit.usercrud.events.RegisterEvent;
+import com.enit.usercrud.events.EventWrapper;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -19,11 +20,11 @@ import java.util.Map;
 public class KafkaConsumerOneConfig {
 
 @Bean
-public ConsumerFactory<String, RegisterEvent> consumerFactory(){
-    JsonDeserializer<RegisterEvent> deserializer = new JsonDeserializer<>(RegisterEvent.class);
-    deserializer.setRemoveTypeHeaders(false);
-    deserializer.addTrustedPackages("*");
-    deserializer.setUseTypeMapperForKey(true);
+public ConsumerFactory<String, String> consumerFactory(){
+//    JsonDeserializer<String> deserializer = new JsonDeserializer<>(EventWrapper.class);
+//    deserializer.setRemoveTypeHeaders(false);
+//    deserializer.addTrustedPackages("*");
+//    deserializer.setUseTypeMapperForKey(true);
 
     Map<String, Object> config = new HashMap<>();
 
@@ -32,14 +33,14 @@ public ConsumerFactory<String, RegisterEvent> consumerFactory(){
     config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
     config.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
     config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-    config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, deserializer);
+    config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);
 
-    return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(), deserializer);
+    return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(), new StringDeserializer());
 }
 
 @Bean
-public ConcurrentKafkaListenerContainerFactory<String, RegisterEvent> kafkaListenerContainerFactory(){
-    ConcurrentKafkaListenerContainerFactory<String, RegisterEvent> factory = new ConcurrentKafkaListenerContainerFactory<>();
+public ConcurrentKafkaListenerContainerFactory<String, String> kafkaListenerContainerFactory(){
+    ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
     factory.setConsumerFactory(consumerFactory());
     return factory;
 

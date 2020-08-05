@@ -1,6 +1,8 @@
 package com.enit.authentication.events;
 
-public class LogoutUserEvent extends Event {
+import com.enit.authentication.model.EventName;
+
+public class DeleteUserEvent extends Event {
 
 	private String username;
 
@@ -12,13 +14,13 @@ public class LogoutUserEvent extends Event {
 		this.username = username;
 	}
 
-	public LogoutUserEvent(String username) {
-		super("logout");
+	public DeleteUserEvent(String username) {
+		super(EventName.DELETE_USER);
 		this.username = username;
 
 	}
 
-	public LogoutUserEvent() {
+	public DeleteUserEvent() {
 
 	}
 }

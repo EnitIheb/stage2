@@ -10,12 +10,14 @@ import com.enit.authentication.message.request.LoginForm;
 import com.enit.authentication.message.request.SignUpForm;
 import com.enit.authentication.message.response.JwtResponse;
 import com.enit.authentication.message.response.ResponseMessage;
+import com.enit.authentication.model.EventName;
 import com.enit.authentication.model.Role;
 import com.enit.authentication.model.RoleName;
 import com.enit.authentication.model.User;
 import com.enit.authentication.repository.RoleRepository;
 import com.enit.authentication.repository.UserRepository;
 import com.enit.authentication.security.jwt.JwtProvider;
+import com.enit.authentication.service.RoleConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
@@ -57,7 +59,7 @@ public class AuthRestAPIs {
 	JwtProvider jwtProvider;
 
 	@Autowired
-	KafkaTemplate<String,Event> kafkaTemplate;
+	KafkaTemplate<String, Event> kafkaTemplate;
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginForm loginRequest) {
@@ -73,7 +75,7 @@ public class AuthRestAPIs {
 
 		//List<String> preferences = userRepository.findByUsername(loginRequest.getUsername()).get().getPreferences();
 //
-		kafkaTemplate.send("userPreferences", new RegisterUserEvent(loginRequest.getUsername()));
+
 
 		return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getUsername(), userDetails.getAuthorities()));
 
@@ -122,41 +124,39 @@ public class AuthRestAPIs {
         Set<String> a= new HashSet<>();
         a.add("admin1");
 		Set<String> strRoles = signUpRequest.getRole();
-		Set<Role> roles = new HashSet<>();
-		System.out.println(strRoles);
-		System.out.println(a);
+		Set<Role> roles = RoleConverter.convertAllToRole(strRoles,roleRepository);
+		;
 
-		System.out.println("before role validation");
 
-		strRoles.forEach(role -> {
-			switch (role) {
-			case "admin":
-				System.out.println(roleRepository.findByName(RoleName.ROLE_ADMIN));
-
-				Role adminRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
-						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-				roles.add(adminRole);
-				System.out.println("list: "+ roles);
-
-				break;
-			case "advertiser":
-				Role advertiserRole = roleRepository.findByName(RoleName.ROLE_ADVERTISER)
-						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-				roles.add(advertiserRole);
-
-				break;
-			case "consumer":
-				Role consumerRole = roleRepository.findByName(RoleName.ROLE_CONSUMER)
-						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-				roles.add(consumerRole);
-
-				break;
-			default:
-				Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
-						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-				roles.add(userRole);
-			}
-		});
+//		strRoles.forEach(role -> {
+//			switch (role) {
+//			case "admin":
+//				System.out.println(roleRepository.findByName(RoleName.ROLE_ADMIN));
+//
+//				Role adminRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
+//						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+//				roles.add(adminRole);
+//				System.out.println("list: "+ roles);
+//
+//				break;
+//			case "advertiser":
+//				Role advertiserRole = roleRepository.findByName(RoleName.ROLE_ADVERTISER)
+//						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+//				roles.add(advertiserRole);
+//
+//				break;
+//			case "consumer":
+//				Role consumerRole = roleRepository.findByName(RoleName.ROLE_CONSUMER)
+//						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+//				roles.add(consumerRole);
+//
+//				break;
+//			default:
+//				Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
+//						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+//				roles.add(userRole);
+//			}
+//		});
        		System.out.println("hello before role");
 
 		user.setRoles(roles);
@@ -175,7 +175,7 @@ public class AuthRestAPIs {
 		userRepository.save(user);
 				System.out.println("hello after saving");
 
-		kafkaTemplate.send("usersProfiles", new RegisterUserEvent(signUpRequest.getUsername()));
+		kafkaTemplate.send("userEvent", new RegisterUserEvent(signUpRequest.getUsername(),signUpRequest.getEmail(),signUpRequest.getRole(),signUpRequest.getFirstName(),signUpRequest.getLastName(),signUpRequest.getPassword()));
 
 
 		return new ResponseEntity<>(new ResponseMessage("User registered successfully!"), HttpStatus.OK);

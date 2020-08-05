@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Document(indexName = "roles", type = "_doc")
 public class Role {
-    
+
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
     private String id;
@@ -46,6 +46,6 @@ public class Role {
 	public String toString() {
 		return "Role [id=" + id + ", name=" + name + "]";
 	}
-    
-    
+
+
 }

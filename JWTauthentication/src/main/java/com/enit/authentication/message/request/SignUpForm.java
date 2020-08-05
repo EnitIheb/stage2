@@ -3,7 +3,7 @@ package com.enit.authentication.message.request;
 import java.util.Set;
 
 import javax.validation.constraints.*;
-
+import com.enit.authentication.model.Role;
 public class SignUpForm {
 //    @NotBlank
 //    @Size(min = 3, max = 50)
@@ -50,6 +50,7 @@ public class SignUpForm {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+
 
 	public String getFirstName() {
 		return firstName;

@@ -12,6 +12,7 @@ import java.util.*;
 @Entity
 @Table
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -32,6 +33,7 @@ public class User {
     @ManyToMany
     @JoinTable(name="user_roles" , joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles =new HashSet<>();
+
     @NotBlank
     @Size(min = 3, max = 50)
     private String firstName;

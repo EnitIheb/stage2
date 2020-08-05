@@ -1,6 +1,7 @@
-package com.enit.authentication.events;
+package com.enit.usercrud.events;
 
-import com.enit.authentication.model.EventName;
+
+import com.enit.usercrud.model.EventName;
 
 import java.util.Set;
 
@@ -9,17 +10,9 @@ public class RegisterUserEvent extends Event {
 	private String username;
 	private String email;
 	private Set<String> role;
-    private String password;
+	private String password;
 	private String firstName;
 	private String lastName;
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getPassword() {
-		return password;
-	}
 
 	public String getUsername() {
 		return username;
@@ -41,7 +34,9 @@ public class RegisterUserEvent extends Event {
 		this.role = role;
 	}
 
-
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -55,17 +50,20 @@ public class RegisterUserEvent extends Event {
 		return role;
 	}
 
+	public String getPassword() {
+		return password;
+	}
 
 	public String getFirstName() {
 		return firstName;
 	}
 
-	public RegisterUserEvent( String username, String email, Set<String> role,  String firstName, String lastName,String password) {
+	public RegisterUserEvent(String username, String email, Set<String> role, String password, String firstName, String lastName) {
 		super(EventName.REGISTER_USER);
 		this.username = username;
 		this.email = email;
 		this.role = role;
-        this.password=password;
+		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}

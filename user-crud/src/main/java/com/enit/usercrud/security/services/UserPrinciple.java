@@ -22,7 +22,7 @@ public class UserPrinciple implements UserDetails {
 
 	private String lastName;
 
-	private String gender;
+
 
 	private String username;
 
@@ -33,12 +33,12 @@ public class UserPrinciple implements UserDetails {
 
 	private Collection<? extends GrantedAuthority> authorities;
 
-	public UserPrinciple(String id, String firstName, String lastName, String gender, String username, String email,
+	public UserPrinciple(String id, String firstName, String lastName,  String username, String email,
 			String password, Collection<? extends GrantedAuthority> authorities) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.gender = gender;
+
 		this.username = username;
 		this.email = email;
 		this.password = password;
@@ -47,9 +47,9 @@ public class UserPrinciple implements UserDetails {
 
 	public static UserPrinciple build(User user) {
 		List<GrantedAuthority> authorities = user.getRoles().stream()
-				.map(role -> new SimpleGrantedAuthority(role.getName().name())).collect(Collectors.toList());
+				.map(role -> new SimpleGrantedAuthority(role)).collect(Collectors.toList());
 
-		return new UserPrinciple(user.getId(), user.getFirstName(), user.getLastName(),user.getGender(), user.getUsername(),
+		return new UserPrinciple(user.getId(), user.getFirstName(), user.getLastName(), user.getUsername(),
 				user.getEmail(), user.getPassword(), authorities);
 	}
 
@@ -69,9 +69,9 @@ public class UserPrinciple implements UserDetails {
 		return lastName;
 	}
 	
-	public String getGender() {
-		return gender;
-	}
+//	public String getGender() {
+//		return gender;
+//	}
 
 	public String getEmail() {
 		return email;

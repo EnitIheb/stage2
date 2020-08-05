@@ -70,11 +70,7 @@ services:
     build:
       context: JWTauthentication
       dockerfile: Dockerfile
-    depends_on:
-#      - config-server
-#      - mysql
-##      - discovery-server
-      - kafka
+   
     restart: always
     ports:
       - "8098:8098"

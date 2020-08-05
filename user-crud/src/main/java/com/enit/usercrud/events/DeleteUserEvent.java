@@ -1,10 +1,10 @@
 package com.enit.usercrud.events;
 
 
+import com.enit.usercrud.model.EventName;
 
-public class DeleteUserAccount  extends Event{
-          
-   
+public class DeleteUserEvent extends Event {
+
 	private String username;
 
 	public String getUsername() {
@@ -15,14 +15,13 @@ public class DeleteUserAccount  extends Event{
 		this.username = username;
 	}
 
-
-	public DeleteUserAccount(String username) {
-		super("user account deleted");
+	public DeleteUserEvent(String username) {
+		super(EventName.DELETE_USER);
 		this.username = username;
-	}
-
-	public DeleteUserAccount() {
 
 	}
-	
+
+	public DeleteUserEvent() {
+
+	}
 }

@@ -1,6 +1,6 @@
-package services;
+package com.enit.randomrecommandationservice.services;
 
-import entity.Ad;
+import com.enit.randomrecommandationservice.entity.Ad;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,12 +1,16 @@
-package services;
+package com.enit.randomrecommandationservice.services;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.Random;
+import java.util.stream.Collectors;
 
-import entity.Ad;
-import entity.Status;
-import events.SaveAdEvent;
+import com.enit.randomrecommandationservice.entity.Ad;
+import com.enit.randomrecommandationservice.events.*;
+
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.annotation.PartitionOffset;
@@ -14,13 +18,9 @@ import org.springframework.kafka.annotation.TopicPartition;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import repository.UserProfileRepository;
+
+import com.enit.randomrecommandationservice.repository.UserProfileRepository;
 
 @Service
 public class KafkaConsumer {
@@ -34,16 +34,35 @@ public class KafkaConsumer {
 	@Autowired
 	UserProfileRepository userProfileRepo;
 
-	@Autowired
-	private Gson gson;
+	ObjectMapper objectMapper = new ObjectMapper();
 
 	@KafkaListener(topicPartitions = {
-			@TopicPartition(topic = "adsToBeConsumed", partitionOffsets = @PartitionOffset(partition = "0", initialOffset = "0")) }, groupId = "group_id2")
+			@TopicPartition(topic = "adsToBeConsumed", partitionOffsets = @PartitionOffset(partition = "0", initialOffset = "1")) }, groupId = "group_id2")
 	public void consume(@Payload String message) throws JsonParseException, JsonMappingException, IOException {
-		ObjectMapper objectMapper = new ObjectMapper();
-		SaveAdEvent event2= objectMapper.readValue(message,SaveAdEvent.class);
-		adsService.saveAd(new Ad(event2.getCategory(), event2.getTitle(),event2.getDescription(),event2.getPrice(), event2.getAdvertiserPhoneNumber(),event2.getCountry(),event2.getState(),event2.getCity(),event2.getStatus(),event2.getAdImagesDirectory(),event2.getCondition(),event2.getModel(),event2.getBrand(),event2.getViews(),event2.getRate(),event2.getLocation()));
-		System.out.println(event2.getType());
+		String json = "{ \"f1\" : \"v1\" } ";
+		Event rootNode = objectMapper.readValue(message, SaveAdEvent.class);
+		switch(rootNode.getType()){
+			case CREATE_AD:
+
+				SaveAdEvent event2= objectMapper.readValue(message,SaveAdEvent.class);
+				adsService.saveAd(new Ad(event2.getId(),event2.getCategory(), event2.getTitle(),event2.getDescription(),event2.getPrice(), event2.getAdvertiserPhoneNumber(),event2.getCountry(),event2.getState(),event2.getCity(),event2.getStatus(),event2.getAdImagesDirectory(),event2.getCondition(),event2.getModel(),event2.getBrand(),event2.getViews(),event2.getRate(),event2.getLocation().values().toArray(new Double[0])));
+				System.out.println(event2.getType());
+				break;
+			case DELETE_AD:
+				DeleteAdEvent event= objectMapper.readValue(message, DeleteAdEvent.class);
+				//adsService.saveAd(new Ad(event.getCategory(), event.getTitle(),event.getDescription(),event.getPrice(), event.getAdvertiserPhoneNumber(),event.getCountry(),event.getState(),event.getCity(),event.getStatus(),event.getAdImagesDirectory(),event.getCondition(),event.getModel(),event.getBrand(),event.getViews(),event.getRate(),event.getLocation().values().toArray(new Double[0])));
+				adsService.deleteAd(event.getId());
+				System.out.println(event.getType());
+				break;
+			case UPDATE_AD:
+				UpdateAdEvent adEvent= objectMapper.readValue(message,UpdateAdEvent.class);
+				adsService.saveAd(new Ad(adEvent.getId(),adEvent.getCategory(), adEvent.getTitle(),adEvent.getDescription(),adEvent.getPrice(), adEvent.getAdvertiserPhoneNumber(),adEvent.getCountry(),adEvent.getState(),adEvent.getCity(),adEvent.getStatus(),adEvent.getAdImagesDirectory(),adEvent.getCondition(),adEvent.getModel(),adEvent.getBrand(),adEvent.getViews(),adEvent.getRate(),adEvent.getLocation().values().toArray(new Double[0])));
+				System.out.println(adEvent.getType()+"hello");
+				break;
+		}
+
+
+
 //		tring category, String title, String description, int price, int advertiserPhoneNumber, String country, String state, String city, Status
 //		status, String adImagesDirectory, String condition, String model, String brand, int views, float rate, double[] location
 

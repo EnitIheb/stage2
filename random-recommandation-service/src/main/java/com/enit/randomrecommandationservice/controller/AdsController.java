@@ -1,15 +1,15 @@
-package controller;
+package com.enit.randomrecommandationservice.controller;
 
 import java.util.Optional;
 
-import entity.Ad;
+import com.enit.randomrecommandationservice.entity.Ad;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import repository.UserProfileRepository;
+import com.enit.randomrecommandationservice.repository.UserProfileRepository;
 
-import services.AdsService;
+import com.enit.randomrecommandationservice.services.AdsService;
 
 
 @RestController
@@ -23,6 +23,11 @@ public class AdsController {
 
 //	@Autowired
 //	UserStatusRepository userStatusRepo;
+   @GetMapping(value = "/test")
+	public String test()
+   {
+   	return "hello from random";
+   }
 
 	@GetMapping(value = "/ad/{id}")
 	public Optional<Ad> getAd(@PathVariable String id) {

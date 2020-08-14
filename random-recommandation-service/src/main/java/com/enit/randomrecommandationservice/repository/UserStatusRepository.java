@@ -1,7 +1,7 @@
-//package repository;
+//package com.enit.randomrecommandationservice.repository;
 //
-//import entity.LoggedInUsers;
-//import org.springframework.data.jpa.repository.JpaRepository;
+//import com.enit.randomrecommandationservice.entity.LoggedInUsers;
+//import org.springframework.data.jpa.com.enit.randomrecommandationservice.repository.JpaRepository;
 //import org.springframework.stereotype.Repository;
 //
 //

@@ -1,4 +1,4 @@
-package config;
+package com.enit.randomrecommandationservice.config;
 
 import java.util.HashMap;
 import java.util.Map;

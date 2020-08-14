@@ -4,7 +4,7 @@
 
 
 
-package entity;
+package com.enit.randomrecommandationservice.entity;
 //
 
 
@@ -15,7 +15,6 @@ import org.springframework.data.annotation.Id;
 
 import org.springframework.data.mongodb.core.index.GeoSpatialIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.stereotype.Component;
 
 @Document(collection = "advertiser")
 public class Ad {
@@ -41,7 +40,7 @@ public class Ad {
 	private List<Float> rates = new ArrayList<Float>();
 	private float rate;
 	@GeoSpatialIndexed
-	private double[] location;
+	private Double[] location;
 
 
 //	private Set<String> availablePreferences= new HashSet<String>(Arrays.asList("Electronics","Real Estate","Vehicles","House and Garden","Leisure & Entertainment","Shoppings","Pets","Services","Jobs","Enterprise","Others"));
@@ -209,11 +208,11 @@ public class Ad {
 		this.rates = rates;
 	}
 
-	public Ad(String category, String title, String description, int price, int advertiserPhoneNumber, String country, String state, String city, Status status, String adImagesDirectory, String condition, String model, String brand, int views, float rate, double[] location) {
+	public Ad(String id,String category, String title, String description, int price, int advertiserPhoneNumber, String country, String state, String city, Status status, String adImagesDirectory, String condition, String model, String brand, int views, float rate, Double[] location) {
 		this.category = category;
 		this.title = title;
 		this.description = description;
-
+        this.id=id;
 		this.price = price;
 		this.advertiserPhoneNumber = advertiserPhoneNumber;
 		this.country = country;
@@ -239,11 +238,11 @@ public class Ad {
 		this.rate = rate;
 	}
 
-	public double[] getLocation() {
+	public Double[] getLocation() {
 		return location;
 	}
 
-	public void setLocation(double[] location) {
+	public void setLocation(Double[] location) {
 		this.location = location;
 	}
 

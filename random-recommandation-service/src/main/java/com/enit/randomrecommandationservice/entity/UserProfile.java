@@ -1,15 +1,9 @@
-package entity;
+package com.enit.randomrecommandationservice.entity;
 
-import java.util.List;
-
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 import org.springframework.data.mongodb.core.index.GeoSpatialIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.stereotype.Component;
 
 @Document(collection = "UsersProfiles")
 public class UserProfile {

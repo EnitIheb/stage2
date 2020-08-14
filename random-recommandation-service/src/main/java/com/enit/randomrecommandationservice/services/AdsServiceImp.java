@@ -1,13 +1,13 @@
-package services;
+package com.enit.randomrecommandationservice.services;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import entity.Ad;
+import com.enit.randomrecommandationservice.entity.Ad;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.AdsRepository;
+import com.enit.randomrecommandationservice.repository.AdsRepository;
 
 
 @Service
@@ -20,6 +20,7 @@ public class AdsServiceImp implements AdsService {
 	@Override
 	public void saveAd(Ad ad) {
 		edao.save(ad);
+		System.out.println("saved successfully");
 	}
 
 	@Override

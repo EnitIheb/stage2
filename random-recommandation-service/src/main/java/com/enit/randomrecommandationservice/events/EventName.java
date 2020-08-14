@@ -1,4 +1,4 @@
-package events;
+package com.enit.randomrecommandationservice.events;
 
 public enum EventName {
     CREATE_AD,

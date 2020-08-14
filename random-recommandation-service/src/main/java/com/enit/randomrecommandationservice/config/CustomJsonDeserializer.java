@@ -1,4 +1,4 @@
-package config;
+package com.enit.randomrecommandationservice.config;
 
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 

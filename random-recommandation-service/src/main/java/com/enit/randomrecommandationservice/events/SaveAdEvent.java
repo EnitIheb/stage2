@@ -1,15 +1,13 @@
-package events;
+package com.enit.randomrecommandationservice.events;
 
 
-import entity.Ad;
-import entity.Status;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import com.enit.randomrecommandationservice.entity.Ad;
+import com.enit.randomrecommandationservice.entity.Status;
 
+import java.util.*;
 
-public class UpdateAdEvent extends Event {
+public class SaveAdEvent extends Event {
 
 	private String id;
 	private String advertiserEmail;
@@ -31,13 +29,12 @@ public class UpdateAdEvent extends Event {
 	private int views;
 	private List<Float> rates = new ArrayList<Float>();
 	private float rate;
-	private double[] location;
+	private Map<String,Double> location;
 
 
-	public UpdateAdEvent(Ad ad) {
-        super(EventName.UPDATE_AD);
+	public SaveAdEvent(Ad ad) {
+        super(EventName.CREATE_AD);
         this.id = ad.getId();
-
         this.advertiserEmail = ad.getAdvertiserEmail();
         this.category = ad.getCategory();
         this.title = ad.getTitle();
@@ -57,10 +54,10 @@ public class UpdateAdEvent extends Event {
         this.views = ad.getViews();
         this.rates = ad.getRates();
         this.rate = ad.getRate();
-        this.location = ad.getLocation();
+//        this.location = ad.getLocation();
     }
 
-	public UpdateAdEvent() {
+	public SaveAdEvent() {
 
 	}
 
@@ -72,21 +69,9 @@ public class UpdateAdEvent extends Event {
 		this.id = id;
 	}
 
-//	public String getRequestId() {
-//		return requestId;
-//	}
-//
-//	public void setRequestId(String requestId) {
-//		this.requestId = requestId;
-//	}
-//
-//	public String getRecommandationId() {
-//		return recommandationId;
-//	}
-//
-//	public void setRecommandationId(String recommandationId) {
-//		this.recommandationId = recommandationId;
-//	}
+
+
+
 
 	public String getAdvertiserEmail() {
 		return advertiserEmail;
@@ -232,6 +217,7 @@ public class UpdateAdEvent extends Event {
 		this.rates = rates;
 	}
 
+
 	public float getRate() {
 		return rate;
 	}
@@ -240,13 +226,14 @@ public class UpdateAdEvent extends Event {
 		this.rate = rate;
 	}
 
-	public double[] getLocation() {
+	public Map<String, Double> getLocation() {
 		return location;
 	}
 
-	public void setLocation(double[] location) {
+	public void setLocation(Map<String,Double> location) {
 		this.location = location;
 	}
+
 
 
 }

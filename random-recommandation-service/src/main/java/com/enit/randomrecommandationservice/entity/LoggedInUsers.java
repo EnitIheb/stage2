@@ -1,4 +1,4 @@
-//package entity;
+//package com.enit.randomrecommandationservice.entity;
 //
 //import javax.persistence.Entity;
 //import javax.persistence.Id;

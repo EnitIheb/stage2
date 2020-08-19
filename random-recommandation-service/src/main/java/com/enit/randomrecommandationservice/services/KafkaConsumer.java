@@ -156,21 +156,21 @@ public class KafkaConsumer {
 //
 ////this listener needs to start from beginning. Otherwise if we restart the µservice we must save new ads again.
 	@KafkaListener(topics = "requestRecommandation", groupId = "group_id1")
-	public void consumeRequest(@Payload String requestString)
-			throws JsonParseException, JsonMappingException, IOException {
-		ObjectMapper mapper = new ObjectMapper();
-		Request request = mapper.readValue(requestString, Request.class);
+			public void consumeRequest(@Payload String requestString)
+					throws JsonParseException, JsonMappingException, IOException {
+				ObjectMapper mapper = new ObjectMapper();
+				Request request = mapper.readValue(requestString, Request.class);
 
-     	String user_id = request.getUsername();
-      	String requestId =request.getRequestId();
-		List<Ad> listAds1 = adsService.findByLocationNear(new Point(request.getLon(),request.getLar()),new Distance(10	, Metrics.MILES));
-        Ad ad=adsService.findone();
-        System.out.println(ad);
-		System.out.println("There is " + listAds1.size() + "  listAds1");
-//		List<Recommandation>listRec=listAds.stream().map(ads -> new Recommandation(ads)).collect(Collectors.toList());
-		System.out.println("Request to be saved is : userId: " + user_id + " & requestId: " + requestId+" "+request.getLar());
-		System.out.println(request);
-        System.out.println();
+				String user_id = request.getUsername();
+				String requestId =request.getRequestId();
+				List<Ad> listAds1 = adsService.findByLocationNear(new Point(request.getLon(),request.getLar()),new Distance(10	, Metrics.MILES));
+				Ad ad=adsService.findone();
+				System.out.println(ad);
+				System.out.println("There is " + listAds1.size() + "  listAds1");
+		//		List<Recommandation>listRec=listAds.stream().map(ads -> new Recommandation(ads)).collect(Collectors.toList());
+				System.out.println("Request to be saved is : userId: " + user_id + " & requestId: " + requestId+" "+request.getLar());
+				System.out.println(request);
+				System.out.println();
 //		System.out.println("*****ad to be send to recommandation topic is :");
 //		Ad someAd = listAds.get(0);
 //		System.out.p	rintln(someAd.toString());
@@ -183,7 +183,7 @@ public class KafkaConsumer {
             int nxt;
             Recommandation rec;
             Object[] listAdsArray = listRec.toArray();
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < listAds1.size(); i++) {
                 nxt = ran.nextInt(listRec.size());
 
                 rec = (Recommandation) listAdsArray[nxt];

@@ -1,4 +1,4 @@
-package com.enit.randomrecommandationservice.entity;
+package com.enit.serving2.entity;
 
 import java.io.Serializable;
 
@@ -8,9 +8,6 @@ public class Recommandation implements Serializable {
     private String username;
 
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public Recommandation(Ad ad) {
         this.ad = ad;

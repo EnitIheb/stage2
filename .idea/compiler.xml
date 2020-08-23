@@ -6,17 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ads-crud" />
         <module name="JWTauthentication" />
         <module name="eureka-server" />
         <module name="user-crud" />
         <module name="config-server" />
         <module name="authentication" />
         <module name="Backend" />
-        <module name="consumer" />
+        <module name="random-recommandation-service" />
         <module name="zuul-gateway" />
         <module name="discovery-server" />
-        <module name="random-recommandation-service" />
+        <module name="serving2" />
+        <module name="ads-crud" />
+        <module name="consumer" />
         <module name="serving-service" />
       </profile>
     </annotationProcessing>
@@ -32,6 +33,7 @@
       <module name="JWTauthentication" target="1.8" />
       <module name="random-recommandation-service" target="1.8" />
       <module name="serving-service" target="1.8" />
+      <module name="serving2" target="1.8" />
       <module name="user-crud" target="1.8" />
       <module name="zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
@@ -48,6 +50,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="random-recommandation-service" options="-parameters" />
       <module name="serving-service" options="-parameters" />
+      <module name="serving2" options="-parameters" />
       <module name="user-crud" options="-parameters" />
       <module name="zuul-gateway" options="-parameters" />
     </option>

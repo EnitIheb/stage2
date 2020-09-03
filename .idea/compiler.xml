@@ -7,52 +7,38 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JWTauthentication" />
-        <module name="eureka-server" />
-        <module name="user-crud" />
-        <module name="config-server" />
-        <module name="authentication" />
-        <module name="Backend" />
-        <module name="random-recommandation-service" />
-        <module name="zuul-gateway" />
         <module name="discovery-server" />
+        <module name="config-server" />
+        <module name="user-crud" />
+        <module name="Backend" />
+        <module name="gateway" />
         <module name="serving2" />
         <module name="ads-crud" />
-        <module name="consumer" />
-        <module name="serving-service" />
+        <module name="random-recommandation-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ads-crud" target="1.8" />
-      <module name="AdsManagement" target="1.8" />
-      <module name="authentication" target="1.8" />
       <module name="Backend" target="1.5" />
       <module name="config-server" target="1.8" />
-      <module name="consumer" target="8" />
       <module name="discovery-server" target="1.8" />
-      <module name="eureka-server" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="JWTauthentication" target="1.8" />
       <module name="random-recommandation-service" target="1.8" />
-      <module name="serving-service" target="1.8" />
       <module name="serving2" target="1.8" />
       <module name="user-crud" target="1.8" />
-      <module name="zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="AdsManagement" options="-parameters" />
       <module name="JWTauthentication" options="-parameters" />
       <module name="ads-crud" options="-parameters" />
-      <module name="authentication" options="-parameters" />
       <module name="config-server" options="-parameters" />
-      <module name="consumer" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
-      <module name="eureka-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="random-recommandation-service" options="-parameters" />
-      <module name="serving-service" options="-parameters" />
       <module name="serving2" options="-parameters" />
       <module name="user-crud" options="-parameters" />
-      <module name="zuul-gateway" options="-parameters" />
     </option>
   </component>
 </project>

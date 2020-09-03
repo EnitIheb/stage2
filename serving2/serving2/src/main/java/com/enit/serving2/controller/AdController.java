@@ -7,6 +7,7 @@ import com.enit.serving2.entity.Recommandation;
 import com.enit.serving2.repository.RedisAdRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,7 +36,9 @@ public class AdController {
 
     @GetMapping("/{username}")
     public List list(@PathVariable String username){
-        return adRepository.findAll(username);
+
+        return adsService.findAll(username);
+
     }
 
     @GetMapping("/{id}/{username}")
@@ -43,11 +46,11 @@ public class AdController {
         return adRepository.findById(id,username);
     }
 
-    @DeleteMapping("/{id}/{username}")
-    public String deleteAd(@PathVariable String id,@PathVariable String username){
-        adRepository.delete(id,username);
-        return id;
-    }
+//    @DeleteMapping("/{username}")
+//    public String deleteAd(@PathVariable String id,@PathVariable String username){
+//        adsService.delete(id,username);
+//        return id;
+//    }
 
     @GetMapping(value = "/request/{username}/{lat}/{lon}")
     public List<Ad> saveConsumer(@PathVariable String username ,@PathVariable Double lon,@PathVariable Double lat ) throws InterruptedException {

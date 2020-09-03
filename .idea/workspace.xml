@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e7ce8a8-7159-46be-a38b-bb53a27fb069" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/events/LogInUserEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/events/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/events/EventName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/events/LogInUserEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stage 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/controller/AuthRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/controller/AuthRestAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/model/EventName.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/model/EventName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/controller/AdsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/controller/AdsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-fix.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-fix.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/services/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/services/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/KafkaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/controller/AdController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/repository/RedisAdRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/repository/RedisAdRepository.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gzEDeRflnPS39xQ01pK7QMT16N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\serving2\serving2\src\main\java\com\enit\serving2\entity" />
+      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\serving2\serving2\src\main\java\com\enit\serving2\events" />
+      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\JWTauthentication\src\main\java\com\enit\authentication\events" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Serving2Application">
+    <configuration name="AdsCrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.adscrud.AdsCrudApplication" />
+      <module name="ads-crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enit.adscrud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.authentication.AuthenticationApplication" />
+      <module name="JWTauthentication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enit.authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomRecommandationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.randomrecommandationservice.RandomRecommandationServiceApplication" />
+      <module name="random-recommandation-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enit.randomrecommandationservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Serving2Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.serving2.Serving2Application" />
+      <module name="serving2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enit.serving2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Serving2Application" />
+        <item itemvalue="Application.RandomRecommandationServiceApplication" />
+        <item itemvalue="Application.AdsCrudApplication" />
+        <item itemvalue="Application.AuthenticationApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e7ce8a8-7159-46be-a38b-bb53a27fb069" name="Default Changelist" comment="" />
+      <created>1599108903165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599108903165</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599109129896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599109129896" />
+    <state width="1478" height="212" key="GridCell.Tab.0.bottom" timestamp="1599153313117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599153313117" />
+    <state width="1478" height="212" key="GridCell.Tab.0.center" timestamp="1599153313117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599153313117" />
+    <state width="1478" height="212" key="GridCell.Tab.0.left" timestamp="1599153313117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599153313117" />
+    <state width="1478" height="212" key="GridCell.Tab.0.right" timestamp="1599153313117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599153313117" />
+  </component>
+</project>

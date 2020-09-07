@@ -43,8 +43,23 @@ services:
           cpus: '0.001'
           memory: 3gb
 
-#
-#
+  mongodb:
+        image: mongo:latest
+        container_name: "mongodb"
+        environment:
+          - MONGO_INITDB_DATABASE=stage2
+          #- MONGO_INITDB_ROOT_PASSWORD=GH15935746
+          #- MONGO_INITDB_ROOT_USERNAME=root
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+        
+        ports:
+            - 27017:27017
+        
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
 #  kafka:
 #      image: confluentinc/cp-kafka:latest
 #      ports:

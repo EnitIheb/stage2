@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/JWTauthentication/JWTauthentication.iml" filepath="$PROJECT_DIR$/JWTauthentication/JWTauthentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/ads-crud/ads-crud.iml" filepath="$PROJECT_DIR$/ads-crud/ads-crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/demo (3)/demo/demo.iml" filepath="$PROJECT_DIR$/test/demo (3)/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/random-recommandation-service/random-recommandation-service.iml" filepath="$PROJECT_DIR$/random-recommandation-service/random-recommandation-service.iml" />

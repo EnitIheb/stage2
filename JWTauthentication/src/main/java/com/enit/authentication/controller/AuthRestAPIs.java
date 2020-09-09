@@ -4,6 +4,7 @@ import java.util.*;
 
 import javax.validation.Valid;
 
+import com.enit.authentication.config.EventService;
 import com.enit.authentication.events.Event;
 import com.enit.authentication.events.LogInUserEvent;
 import com.enit.authentication.events.RegisterUserEvent;
@@ -59,8 +60,12 @@ public class AuthRestAPIs {
 	@Autowired
 	JwtProvider jwtProvider;
 
-	@Autowired
-	KafkaTemplate<String, Event> kafkaTemplate;
+
+	final public EventService  kafkaTemplate;
+
+	public AuthRestAPIs(EventService eventService){
+		this.kafkaTemplate=eventService;
+	}
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginForm loginRequest) {
@@ -73,7 +78,7 @@ public class AuthRestAPIs {
 		String jwt = jwtProvider.generateJwtToken(authentication);
 		UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 ///////////////////////////////////////Add user to kafka topic/////////////////////////////////
-		kafkaTemplate.send("login-logout", new LogInUserEvent(loginRequest.getUsername(),12.099,36.8));
+		kafkaTemplate.sendLoginEvent(new LogInUserEvent(loginRequest.getUsername(),12.099,36.8));
 
 		//List<String> preferences = userRepository.findByUsername(loginRequest.getUsername()).get().getPreferences();
 //
@@ -177,7 +182,7 @@ public class AuthRestAPIs {
 		userRepository.save(user);
 				System.out.println("hello after saving");
 
-		kafkaTemplate.send("userEvent", new RegisterUserEvent(signUpRequest.getUsername(),signUpRequest.getEmail(),signUpRequest.getRole(),signUpRequest.getFirstName(),signUpRequest.getLastName(),signUpRequest.getPassword()));
+		kafkaTemplate.sendUserEvent( new RegisterUserEvent(signUpRequest.getUsername(),signUpRequest.getEmail(),signUpRequest.getRole(),signUpRequest.getFirstName(),signUpRequest.getLastName(),signUpRequest.getPassword()));
 
 
 		return new ResponseEntity<>(new ResponseMessage("User registered successfully!"), HttpStatus.OK);

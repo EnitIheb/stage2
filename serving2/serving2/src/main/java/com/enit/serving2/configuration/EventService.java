@@ -22,6 +22,7 @@ public class EventService {
 
     public void sendUserRequest(final ConsumerRequest request) {
         MessageChannel messageChannel = myStreams.outboundEvent();
+        System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
         messageChannel.send(MessageBuilder
                 .withPayload(request)
                 .setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)

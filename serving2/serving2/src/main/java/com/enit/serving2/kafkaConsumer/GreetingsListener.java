@@ -15,12 +15,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
+
+import java.util.UUID;
+
 @Component
 
 public class GreetingsListener {
-    private long counter=0;
     @Autowired
     RedisAdRepository adsService;
+
+    ObjectMapper mapper = new ObjectMapper();
 
     private final EventService kafkaTemplate;
     public  GreetingsListener(EventService eventService){
@@ -28,11 +32,11 @@ public class GreetingsListener {
     }
     @StreamListener(MyStream.INPUT_LOGIN)
     public void handleLoginRequest(@Payload String login) throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
+
 
 
         System.out.println(login);
-        LogInUserEvent loginEvent = objectMapper.readValue(login, LogInUserEvent.class);
+        LogInUserEvent loginEvent = mapper.readValue(login, LogInUserEvent.class);
         ConsumerRequest consumerRequest = new ConsumerRequest(loginEvent.getUsername(), loginEvent.getLatitude(), loginEvent.getLongitude());
         adsService.delete(consumerRequest.getUsername());
         System.out.println("hello 1");
@@ -40,12 +44,15 @@ public class GreetingsListener {
         System.out.println("hello 2");
     }
 
+
     @StreamListener(MyStream.INPUT_RECOMMANDATION)
     public void handleUserRecommandation(@Payload String recommandations) throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
+
         System.out.println("recString: "+recommandations);
         ListRecommandation list = mapper.readValue(recommandations, ListRecommandation.class);
-        list.getListRecommandation().forEach(rec -> {adsService.save(rec.getUsername(),Long.toString(counter),rec.getAd());counter++;});
+        list.getListRecommandation().forEach(rec -> {
+
+            adsService.save(list.getUsername(), rec.getAd().getId(),rec.getAd()); });
 
 
         System.out.println("Recommandation saved in memory");

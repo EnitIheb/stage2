@@ -19,170 +19,152 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e7ce8a8-7159-46be-a38b-bb53a27fb069" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_2_1_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_servlet_2_1_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_autoconfigure_metrics_prometheus_2_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_autoconfigure_ui_2_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_server_2_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_ui_2_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_collector_2_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_4_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jodah_typetools_0_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_13_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_13_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_13_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_3_spec_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_threads_jboss_threads_3_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_8_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_8_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_3_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_3_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j2_2_3_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_undertow_2_3_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_3_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_3_0_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_3_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_3_0_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_3_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_core_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_zipkin_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zipkin_2_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zipkin_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_3_0_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_3_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_kafka_3_0_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_kafka_3_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_kafka_core_3_0_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_kafka_core_3_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_test_support_3_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_kafka_3_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_client_wildfly_client_config_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_common_wildfly_common_1_5_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/config/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/config/MyStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/config/StreamsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/config/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/config/MyStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/config/StreamsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/MyStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/StreamsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/services/KafkaListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/MyStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/StreamsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/GreetingsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serving2/serving2/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="90421296-842a-4f6e-b71c-544d15e1d898" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/category/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/CategoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/reposiory/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/service/CategoryServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/enit/category/service/KafkaListner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/RandomRecommandationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/config/CustomJsonDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/config/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/config/MyStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/config/StreamsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/controller/AdsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/Ad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/ConsumerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/DateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/ListOfStringsSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/ListRecommandation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/LoggedInUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/Recommandation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/entity/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/events/DeleteAdEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/events/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/events/EventName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/events/SaveAdEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/events/UpdateAdEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/repository/AdsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/repository/UserProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/repository/UserStatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/services/AdsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/services/AdsServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/java/com/enit/randomrecommandationservice/services/KafkaListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preference-recommandation/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/message/ListPreferences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_csv_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_12_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_opentracing_feign_hystrix_opentracing_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_opentracing_feign_opentracing_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jaegertracing_jaeger_client_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jaegertracing_jaeger_core_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jaegertracing_jaeger_thrift_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jaegertracing_jaeger_tracerresolver_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_concurrent_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_jdbc_0_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_jms_1_0_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_jms_common_0_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_jms_spring_0_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_kafka_client_0_1_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_kafka_spring_0_1_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_kafka_streams_0_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_mongo_driver_0_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_rxjava_1_0_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_core_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_feign_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_hystrix_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_jdbc_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_jms_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_mongo_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_rxjava_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_websocket_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_zuul_starter_0_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_jaeger_cloud_starter_0_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_jaeger_starter_0_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_messaging_0_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_messaging_starter_0_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_rabbitmq_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_rabbitmq_starter_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_tracer_configuration_starter_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_web_0_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_web_starter_0_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_tracerresolver_0_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_web_servlet_filter_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_api_0_33_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_noop_0_33_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_util_0_33_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_api_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_json_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_12_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_12_test_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_test_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_test_utils_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_5_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_jute_3_5_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_test_2_5_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_2_1_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_servlet_2_1_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_autoconfigure_metrics_prometheus_2_11_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_autoconfigure_ui_2_11_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_server_2_11_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_ui_2_11_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_collector_2_11_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_3_spec_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_threads_jboss_threads_3_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_8_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_8_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j2_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_undertow_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_3_0_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_3_0_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_core_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_zipkin_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zipkin_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_3_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_kafka_3_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_kafka_core_3_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_test_support_3_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_client_wildfly_client_config_1_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_common_wildfly_common_1_5_2_Final.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JWTauthentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/config/KafkaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/config/SleuthConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/controller/AuthRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/controller/AuthRestAPIs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New folder/docker-monitoring" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/New folder/prometheus.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads-crud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/config/KafkaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/controller/AdsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/controller/AdsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/grafana/grafana.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/grafana/grafana.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-monitoring/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/random-recommandation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config/SleuthConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/message/request/SignUpForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/message/request/SignUpForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWTauthentication/src/main/java/com/enit/authentication/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/entity/Ad.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/entity/Ad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/events/SaveAdEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/events/SaveAdEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/events/UpdateAdEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads-crud/src/main/java/com/enit/adscrud/events/UpdateAdEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongoDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mongoDB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/Ad.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/Ad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/ListRecommandation.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/ListRecommandation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/Recommandation.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/Recommandation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/entity/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/events/SaveAdEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/events/SaveAdEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/events/UpdateAdEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/events/UpdateAdEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/services/KafkaConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/services/KafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/services/KafkaListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-recommandation-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/random-recommandation-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serving2/serving2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/KafkaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/SleuthConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/KafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/MyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/configuration/MyStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/controller/AdController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/Ad.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/Ad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/ConsumerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/ConsumerRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/ListRecommandation.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/ListRecommandation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/Recommandation.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/entity/Recommandation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/GreetingsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/kafkaConsumer/GreetingsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/repository/RedisAdRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/java/com/enit/serving2/repository/RedisAdRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serving2/serving2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serving2/serving2/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/controller/TestRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/controller/TestRestAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/events/DeleteUserAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/events/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/events/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/events/RegisterEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/security/jwt/JwtAuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/security/jwt/JwtAuthTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/security/jwt/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/security/jwt/JwtProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/service/ProgramDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-crud/src/main/java/com/enit/usercrud/service/ProgramDeserializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +174,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -199,7 +182,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1gzEDeRflnPS39xQ01pK7QMT16N" />
+  <component name="ProjectId" id="1hQtWzrTuXsd1XNFXVFqDb3YGir" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -211,30 +194,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/random-recommandation-service/src/main/java/com/enit/randomrecommandationservice/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/preference-recommandation/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.enit.randomrecommandationservice.services" />
-      <recent name="com.enit.authentication.config" />
-      <recent name="com.enit.adscrud.config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\random-recommandation-service\src\main\java\com\enit\randomrecommandationservice\config" />
-      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\serving2\serving2\src\main\java\com\enit\serving2\configuration" />
-      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\JWTauthentication\src\main\java\com\enit\authentication\config" />
-      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\serving2\serving2\src\main\java\com\enit\serving2\entity" />
-      <recent name="C:\Users\ihebb\OneDrive\Desktop\stage\stage2\serving2\serving2\src\main\java\com\enit\serving2\events" />
+      <recent name="com.enit.randomrecommandationservice.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Application.RandomRecommandationServiceApplication">
-    <configuration name="AdsCrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enit.adscrud.AdsCrudApplication" />
-      <module name="ads-crud" />
+    <configuration name="CategoryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.category.CategoryApplication" />
+      <module name="category" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enit.adscrud.*" />
+          <option name="PATTERN" value="com.enit.category.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,25 +218,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthenticationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enit.authentication.AuthenticationApplication" />
-      <module name="JWTauthentication" />
+    <configuration name="RandomRecommandationServiceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.randomrecommandationservice.RandomRecommandationServiceApplication" />
+      <module name="random-recommandation-service (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enit.authentication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CloudStreamApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enit.cloudStream.CloudStreamApplication" />
-      <module name="cloudStream (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.enit.cloudStream.*" />
+          <option name="PATTERN" value="com.enit.randomrecommandationservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -294,13 +257,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserCrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enit.usercrud.UserCrudApplication" />
+      <module name="user-crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enit.usercrud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RandomRecommandationServiceApplication" />
-        <item itemvalue="Application.AuthenticationApplication" />
+        <item itemvalue="Application.RandomRecommandationServiceApplication (1)" />
         <item itemvalue="Application.Serving2Application" />
-        <item itemvalue="Application.AdsCrudApplication" />
-        <item itemvalue="Application.CloudStreamApplication (1)" />
+        <item itemvalue="Application.CategoryApplication" />
+        <item itemvalue="Application.UserCrudApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -309,11 +285,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e7ce8a8-7159-46be-a38b-bb53a27fb069" name="Default Changelist" comment="" />
-      <created>1599108903165</created>
+      <changelist id="90421296-842a-4f6e-b71c-544d15e1d898" name="Default Changelist" comment="" />
+      <created>1599955179758</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599108903165</updated>
+      <updated>1599955179758</updated>
     </task>
     <servers />
   </component>
@@ -333,29 +309,45 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599565237626">
+    <state x="535" y="117" key="#Auto_Import" timestamp="1600082402084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599565237626" />
-    <state width="1478" height="196" key="GridCell.Tab.0.bottom" timestamp="1599626940650">
+    <state x="535" y="117" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1600082402084" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1600248760218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599626940650" />
-    <state width="1478" height="196" key="GridCell.Tab.0.center" timestamp="1599626940649">
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600248760218" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1600491024511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599626940649" />
-    <state width="1478" height="196" key="GridCell.Tab.0.left" timestamp="1599626940649">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600491024511" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600163447863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599626940649" />
-    <state width="1478" height="196" key="GridCell.Tab.0.right" timestamp="1599626940650">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600163447863" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1600261499552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599626940650" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1599383695158">
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600261499552" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600226958652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1599383695158" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600226958652" />
+    <state width="1478" height="218" key="GridCell.Tab.0.bottom" timestamp="1600492613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600492613245" />
+    <state width="1478" height="218" key="GridCell.Tab.0.center" timestamp="1600492613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600492613245" />
+    <state width="1478" height="218" key="GridCell.Tab.0.left" timestamp="1600492613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600492613245" />
+    <state width="1478" height="218" key="GridCell.Tab.0.right" timestamp="1600492613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600492613245" />
   </component>
 </project>

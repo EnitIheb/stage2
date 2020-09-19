@@ -10,12 +10,12 @@
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/JWTauthentication/pom.xml" />
         <option value="$PROJECT_DIR$/random-recommandation-service/pom.xml" />
+        <option value="$PROJECT_DIR$/serving-service/pom.xml" />
         <option value="$PROJECT_DIR$/serving2/serving2/pom.xml" />
         <option value="$PROJECT_DIR$/user-crud/pom.xml" />
-        <option value="$PROJECT_DIR$/test/demo (3)/demo/pom.xml" />
-        <option value="$PROJECT_DIR$/test/cloudStream/pom.xml" />
-        <option value="$PROJECT_DIR$/test/zipkin/pom.xml" />
-        <option value="$PROJECT_DIR$/test/cloudStream2/pom.xml" />
+        <option value="$PROJECT_DIR$/category/pom.xml" />
+        <option value="$PROJECT_DIR$/recommandation-preferences/pom.xml" />
+        <option value="$PROJECT_DIR$/preference-recommandation/pom.xml" />
       </list>
     </option>
   </component>

@@ -13,17 +13,20 @@ spring:
         binder:
           brokers: 192.168.99.100:19092
       bindings:
+
         request-in:
           destination: requestRecommandation
           contentType: text/plain
+
         event-in:
           destination: adsToBeConsumed
           contentType: application/json
-        recommandation-out:
+
+        recommandation_out:
           destination: recommandation
           contentType: application/json
-  zipkin:
-    base-url: http://192.168.99.100:9411/
+#  zipkin:
+#    base-url: http://192.168.99.100:9411/
   application:
       name: random-recommandation-service
 logging:

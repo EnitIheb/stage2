@@ -66,15 +66,16 @@ public class KafkaListener {
         ObjectMapper mapper = new ObjectMapper();
         Request request = mapper.readValue(requestString, Request.class);
         String user_id = request.getUsername();
-        List<Ad> listAds1 = adsService.findByLocationNear(new Point(request.getLon(),request.getLar()),new Distance(100	, Metrics.MILES));
+        List<Ad> listAds1 = adsService.findByLocationNear(new Point(request.getLar(),request.getLon()),new Distance(100	, Metrics.MILES));
         System.out.println("There is " + listAds1.size() + "  listAds1");
         System.out.println(request);
 
         if(listAds1.size()>0) {// This is why we called this microservice:RandomRecommandation
 
             List<Recommandation> listRec=listAds1.stream().map(ads -> new Recommandation(ads)).collect(Collectors.toList());
-            listRec.forEach(rec ->{rec.setUsername(user_id);});
-            kafkaTemplate.sendUserRecommandation(new ListRecommandation(listRec));
+
+            kafkaTemplate.sendUserRecommandation(new ListRecommandation(listRec,user_id));
+
 
 
 

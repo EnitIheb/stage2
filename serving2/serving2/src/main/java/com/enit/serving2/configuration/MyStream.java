@@ -9,7 +9,8 @@ public interface MyStream {
 
     String OUTPUT = "request-out";
     String INPUT_LOGIN = "login-in";
-    String INPUT_RECOMMANDATION="recommandation_in";
+    String INPUT_RECOMMANDATION="recommandation-in";
+
     @Output(OUTPUT)
     MessageChannel outboundEvent();
 

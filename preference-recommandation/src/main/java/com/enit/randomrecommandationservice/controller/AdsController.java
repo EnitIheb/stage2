@@ -11,7 +11,7 @@ import org.springframework.data.geo.Point;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import com.enit.randomrecommandationservice.repository.UserProfileRepository;
+//import com.enit.randomrecommandationservice.repository.UserProfileRepository;
 
 import com.enit.randomrecommandationservice.services.AdsService;
 
@@ -21,9 +21,9 @@ public class AdsController {
 
 	@Autowired
 	AdsService adService;
-
-	@Autowired
-	UserProfileRepository userProfileRepo;
+//
+//	@Autowired
+//	UserProfileRepository userProfileRepo;
 
 //	@Autowired
 //	UserStatusRepository userStatusRepo;

@@ -1,14 +1,25 @@
-package com.enit.authentication.events;
+package com.enit.randomrecommandationservice.entity;
 
-import com.enit.authentication.model.EventName;
+import org.springframework.data.annotation.Id;
+
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
+
 import java.util.List;
-import java.util.Set;
 
-public class RegisterUserEvent extends Event {
 
+@Document(collection = "consumer")
+public class User {
+	
+
+
+	@Id
 	private String username;
+
+	public User(String username) {
+		this.username = username;
+	}
 
 	private List<String> preferences = new ArrayList<String>();
 
@@ -38,19 +49,20 @@ public class RegisterUserEvent extends Event {
 		this.username = username;
 	}
 
-	public RegisterUserEvent() {
-		super(EventName.REGISTER_USER);
+	public User() {
 	}
 
-	public RegisterUserEvent(String username, List<String>preferences,List<String> impPreferences){
-		super(EventName.REGISTER_USER);
+	public User(String username, List<String>preferences,List<String> impPreferences){
 		this.username = username;
 		this.preferences=preferences;
 		this.impPreferences=impPreferences;
 
 	}
-	public RegisterUserEvent(String username) {
-        super(EventName.REGISTER_USER);
-		this.username=username;
-    	}
+
+
+
+
+
+
+
 }

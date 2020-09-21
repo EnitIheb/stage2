@@ -1,12 +1,12 @@
-package com.enit.authentication.events;
+package com.enit.randomrecommandationservice.events;
 
-import com.enit.authentication.model.EventName;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class RegisterUserEvent extends Event {
+public class UpdateUserEvent extends Event {
+
 
 	private String username;
 
@@ -38,19 +38,13 @@ public class RegisterUserEvent extends Event {
 		this.username = username;
 	}
 
-	public RegisterUserEvent() {
-		super(EventName.REGISTER_USER);
+	public UpdateUserEvent() {
 	}
 
-	public RegisterUserEvent(String username, List<String>preferences,List<String> impPreferences){
-		super(EventName.REGISTER_USER);
+	public UpdateUserEvent(String username, List<String>preferences,List<String> impPreferences){
 		this.username = username;
 		this.preferences=preferences;
 		this.impPreferences=impPreferences;
 
 	}
-	public RegisterUserEvent(String username) {
-        super(EventName.REGISTER_USER);
-		this.username=username;
-    	}
 }

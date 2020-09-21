@@ -5,6 +5,7 @@ import java.util.*;
 import javax.validation.Valid;
 
 import com.enit.authentication.config.EventService;
+import com.enit.authentication.events.DeleteUserEvent;
 import com.enit.authentication.events.Event;
 import com.enit.authentication.events.LogInUserEvent;
 import com.enit.authentication.events.RegisterUserEvent;
@@ -31,13 +32,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
 
 @RefreshScope
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -61,11 +57,24 @@ public class AuthRestAPIs {
 	JwtProvider jwtProvider;
 
 
+
+
 	final public EventService  kafkaTemplate;
 
 	public AuthRestAPIs(EventService eventService){
 		this.kafkaTemplate=eventService;
 	}
+
+	@DeleteMapping("/test/{id}")
+	public String test(@PathVariable String id) {
+		System.out.println(id);
+		userRepository.deleteByUsername(id);
+		kafkaTemplate.sendUserEvent(new DeleteUserEvent(id));
+		return "hello";
+
+		}
+
+
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginForm loginRequest) {
@@ -182,7 +191,7 @@ public class AuthRestAPIs {
 		userRepository.save(user);
 				System.out.println("hello after saving");
 
-		kafkaTemplate.sendUserEvent( new RegisterUserEvent(signUpRequest.getUsername(),signUpRequest.getEmail(),signUpRequest.getRole(),signUpRequest.getFirstName(),signUpRequest.getLastName(),signUpRequest.getPassword()));
+		kafkaTemplate.sendUserEvent( new RegisterUserEvent(signUpRequest.getUsername()));
 
 
 		return new ResponseEntity<>(new ResponseMessage("User registered successfully!"), HttpStatus.OK);

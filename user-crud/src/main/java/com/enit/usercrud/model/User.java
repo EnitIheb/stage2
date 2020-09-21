@@ -32,6 +32,10 @@ public class User {
 //    @Size(min=3, max = 50)
 //    private String name;
 
+	public User(String username) {
+		this.username = username;
+	}
+
 	@NotBlank
 	@Size(min = 3, max = 50)
 	private String username;

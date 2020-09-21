@@ -10,6 +10,10 @@ public interface MyStream {
     String INPUT_EVENT = "event-in";
     String INPUT_REQUEST = "request-in";
     String OUTPUT_RECOMMANDATION="recommandation_out";
+    String INPUT_USER_EVENT="user-event-in";
+
+    @Input(INPUT_USER_EVENT)
+    SubscribableChannel inboundUserEvent();
 
     @Output(OUTPUT_RECOMMANDATION)
     MessageChannel outboundRecommandations();

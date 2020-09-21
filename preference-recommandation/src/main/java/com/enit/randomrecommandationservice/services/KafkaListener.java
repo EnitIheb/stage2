@@ -3,16 +3,11 @@ package com.enit.randomrecommandationservice.services;
 
 import com.enit.randomrecommandationservice.config.EventService;
 import com.enit.randomrecommandationservice.config.MyStream;
-import com.enit.randomrecommandationservice.entity.Ad;
-import com.enit.randomrecommandationservice.entity.ListRecommandation;
-import com.enit.randomrecommandationservice.entity.Recommandation;
-import com.enit.randomrecommandationservice.entity.Request;
-import com.enit.randomrecommandationservice.events.DeleteAdEvent;
-import com.enit.randomrecommandationservice.events.Event;
-import com.enit.randomrecommandationservice.events.SaveAdEvent;
-import com.enit.randomrecommandationservice.events.UpdateAdEvent;
+import com.enit.randomrecommandationservice.entity.*;
+import com.enit.randomrecommandationservice.events.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.data.geo.Distance;
@@ -29,6 +24,9 @@ import java.util.stream.Collectors;
 public class KafkaListener {
     @Autowired
     AdsService adsService;
+
+    @Autowired
+    UserService userService;
 
     private final EventService kafkaTemplate;
     public KafkaListener(EventService eventService){
@@ -83,4 +81,37 @@ public class KafkaListener {
         }
     }
 
+    @StreamListener(MyStream.INPUT_USER_EVENT)
+    public void handleUserEvent(@Payload String message) throws JsonProcessingException {
+
+        ObjectMapper objectMapper=new ObjectMapper();
+        final ObjectNode node = new ObjectMapper().readValue(message, ObjectNode.class);
+        EventName eventType=EventName.valueOf(node.get("type").asText());
+        switch( eventType ){
+            case REGISTER_USER:
+
+                RegisterUserEvent event2= objectMapper.readValue(message,RegisterUserEvent.class);
+                userService.saveUser(new User(event2.getUsername()) );
+                break;
+            case DELETE_USER:
+                DeleteUserEvent event= objectMapper.readValue(message, DeleteUserEvent.class);
+                //adsService.saveAd(new Ad(event.getCategory(), event.getTitle(),event.getDescription(),event.getPrice(), event.getAdvertiserPhoneNumber(),event.getCountry(),event.getState(),event.getCity(),event.getStatus(),event.getAdImagesDirectory(),event.getCondition(),event.getModel(),event.getBrand(),event.getViews(),event.getRate(),event.getLocation().values().toArray(new Double[0])));
+                userService.deleteUser(event.getUsername());
+                System.out.println(event.getType());
+                break;
+            case UPDATE_USER:
+                UpdateUserEvent event3= objectMapper.readValue(message,UpdateUserEvent.class);
+                    System.out.println(event3.getUsername());
+                    userService.saveUser(new User(event3.getUsername(),event3.getPreferences(),event3.getImpPreferences()) );
+
+
+        }
+
+
+
+
+
+        }
     }
+
+

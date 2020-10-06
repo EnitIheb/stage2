@@ -11,7 +11,7 @@
 
     <modules>
         <module>JWTauthentication</module>
-        <module>ads-crud</module>
+        
         <module>config-server</module>
         <module>discovery-server</module>
         <module>preference-recommandation</module>

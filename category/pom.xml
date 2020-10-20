@@ -57,12 +57,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
+<!--			<exclusions>-->
+<!--				<exclusion>-->
+<!--					<groupId>org.junit.vintage</groupId>-->
+<!--					<artifactId>junit-vintage-engine</artifactId>-->
+<!--				</exclusion>-->
+<!--			</exclusions>-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -80,6 +80,19 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>de.flapdoodle.embed</groupId>
+			<artifactId>de.flapdoodle.embed.mongo</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/cz.jirutka.spring/embedmongo-spring -->
+		<dependency>
+			<groupId>cz.jirutka.spring</groupId>
+			<artifactId>embedmongo-spring</artifactId>
+			<version>1.1</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -116,10 +129,10 @@
 						<configuration>
 							<skipTests>false</skipTests>
 							<includes>
-								<include>**/*Test.java</include>
+								<include>**/*Tests.java</include>
 							</includes>
 							<excludes>
-								<exclude>**/*InTests.Java</exclude>
+								<exclude>**/*IT.java</exclude>
 							</excludes>
 						</configuration>
 					</execution>
@@ -132,10 +145,10 @@
 						<configuration>
 							<skipTests>false</skipTests>
 							<includes>
-								<include>**/*InTests.Java</include>
+								<include>**/*IT.java</include>
 							</includes>
 							<excludes>
-								<include>**/*Test.java</include>
+								<exclude>**/*Tests.java</exclude>
 							</excludes>
 						</configuration>
 					</execution>

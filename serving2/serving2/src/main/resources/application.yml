@@ -3,7 +3,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.99.100:19092
+          brokers:  http://${KAFKA_HOST}:${KAFKA_PORT}
       bindings:
         login-in:
           destination: login-logout
@@ -21,3 +21,6 @@ spring:
     name: serving-service
 server:
   port: 8051
+
+REDIS_HOST: ${REDIS_HOST}
+REDIS_PORT: ${REDIS_PORT}

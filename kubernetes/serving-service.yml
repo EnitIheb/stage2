@@ -45,12 +45,12 @@ spec:
                 imagePullPolicy: IfNotPresent
                 env:
                     - name:  REDIS_HOST
-                      value: my-release-redis-master
+                      value: redis-master
                     - name:  REDIS_PORT
                       value: "6379"
                   
                     - name: KAFKA_HOST
-                      value: "172.17.0.13"
+                      value: "172.17.0.16"
 
                     - name: KAFKA_PORT
                       value: "9092"

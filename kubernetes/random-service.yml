@@ -40,7 +40,7 @@ spec:
                       value: "stage2"
                   
                     - name: KAFKA_HOST
-                      value: "172.17.0.13"
+                      value: my-release1-kafka-headless
 
                     - name: KAFKA_PORT
                       value: "9092"

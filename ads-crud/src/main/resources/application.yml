@@ -5,14 +5,17 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.99.100:19092
+
+#          brokers: 192.168.99.100:19092
+           brokers:  http://${KAFKA_HOST}:${KAFKA_PORT}
       bindings:
         events-out:
           destination: adsToBeConsumed
           contentType: application/json
 
-#  zipkin:
+  zipkin:
 #    base-url: http://192.168.99.100:9411/
+     base-url: http://${ZIPKIN_HOST}:${ZIPKIN_PORT}
 
 
 
@@ -22,12 +25,15 @@ spring:
       repositories:
         enabled: true
 
-    cluster-nodes: 192.168.99.100:9200
+#    cluster-nodes: 192.168.99.100:9200
+
+    cluster-nodes: http://${ELASTICSEARCH_HOST}:${ELASTICSEARCH_PORT}
     cluster-name: ${CLUSTER_NAME:docker-cluster}
 
   elasticsearch:
     rest:
-      uris: 192.168.99.100:9200
+#      uris: 192.168.99.100:9200
+      uris: ${ELASTICSEARCH_HOST}:${ELASTICSEARCH_PORT}
 lbMarketing:
   app:
     jwtSecret: {$SECRET:jwtlbMarketingSecretKey}
